@@ -4,6 +4,7 @@ import * as React from 'react';
 import type { UserRole, Language, FishListing, Purchase } from '@/lib/types';
 import { translations } from '@/lib/translations';
 import { initialFishListings } from '@/lib/data';
+import { initialPurchases } from '@/lib/data';
 
 interface AppContextType {
   user: { role: UserRole; id: string | null };
@@ -24,7 +25,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = React.useState<{ role: UserRole; id: string | null }>({ role: null, id: null });
   const [language, setLanguage] = React.useState<Language>('en');
   const [listings, setListings] = React.useState<FishListing[]>(initialFishListings);
-  const [purchases, setPurchases] = React.useState<Purchase[]>([]);
+  const [purchases, setPurchases] = React.useState<Purchase[]>(initialPurchases);
   
   React.useEffect(() => {
     const storedLang = localStorage.getItem('matsyasetu-lang') as Language | null;

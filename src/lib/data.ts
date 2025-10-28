@@ -1,4 +1,4 @@
-import type { FishListing } from './types';
+import type { FishListing, Purchase } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
 export const initialFishListings: FishListing[] = [
@@ -9,8 +9,8 @@ export const initialFishListings: FishListing[] = [
     weight: 50,
     price: 800,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[0].imageUrl,
-    imageHint: PlaceHolderImages[0].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1516741539888-96b4c96adf0c?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'tuna fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 1)).toISOString(),
   },
   {
@@ -20,8 +20,8 @@ export const initialFishListings: FishListing[] = [
     weight: 30,
     price: 1200,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[1].imageUrl,
-    imageHint: PlaceHolderImages[1].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1510018572596-e40e2619b412?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'salmon fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 2)).toISOString(),
   },
   {
@@ -31,8 +31,8 @@ export const initialFishListings: FishListing[] = [
     weight: 100,
     price: 250,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[2].imageUrl,
-    imageHint: PlaceHolderImages[2].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1651276950299-44714b8677f9?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'sardines fish',
     dateListed: new Date().toISOString(),
   },
   {
@@ -42,8 +42,8 @@ export const initialFishListings: FishListing[] = [
     weight: 80,
     price: 400,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[3].imageUrl,
-    imageHint: PlaceHolderImages[3].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1554071407-1fb7259a9118?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'mackerel fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 1)).toISOString(),
   },
   {
@@ -53,8 +53,8 @@ export const initialFishListings: FishListing[] = [
     weight: 40,
     price: 950,
     freshness: '3+ Days',
-    imageUrl: PlaceHolderImages[4].imageUrl,
-    imageHint: PlaceHolderImages[4].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1760560749248-308061f48097?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'pomfret fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 3)).toISOString(),
   },
   {
@@ -64,8 +64,8 @@ export const initialFishListings: FishListing[] = [
     weight: 75,
     price: 350,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[6].imageUrl,
-    imageHint: PlaceHolderImages[6].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1564677877393-2dbc65af5e41?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'rohu fish',
     dateListed: new Date().toISOString(),
   },
   {
@@ -75,8 +75,8 @@ export const initialFishListings: FishListing[] = [
     weight: 60,
     price: 320,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[7].imageUrl,
-    imageHint: PlaceHolderImages[7].imageHint,
+    imageUrl: 'https://plus.unsplash.com/premium_photo-1695299693952-4113f5682414?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'catla fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 2)).toISOString(),
   },
   {
@@ -86,8 +86,8 @@ export const initialFishListings: FishListing[] = [
     weight: 25,
     price: 1500,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[8].imageUrl,
-    imageHint: PlaceHolderImages[8].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1668532696872-dc5fe74a47f7?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'hilsa fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 1)).toISOString(),
   },
   {
@@ -97,8 +97,8 @@ export const initialFishListings: FishListing[] = [
     weight: 35,
     price: 1100,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[9].imageUrl,
-    imageHint: PlaceHolderImages[9].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1625369909585-0f9fcbc3d79a?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'kingfish surmai',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 1)).toISOString(),
   },
   {
@@ -108,8 +108,8 @@ export const initialFishListings: FishListing[] = [
     weight: 90,
     price: 200,
     freshness: '3+ Days',
-    imageUrl: PlaceHolderImages[10].imageUrl,
-    imageHint: PlaceHolderImages[10].imageHint,
+    imageUrl: 'https://plus.unsplash.com/premium_photo-1718204043243-ca3666657158?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'bombay duck',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 4)).toISOString(),
   },
   {
@@ -119,8 +119,8 @@ export const initialFishListings: FishListing[] = [
     weight: 120,
     price: 180,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[11].imageUrl,
-    imageHint: PlaceHolderImages[11].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1560166241-0fca91a3d29a?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'anchovy fish',
     dateListed: new Date().toISOString(),
   },
   {
@@ -130,8 +130,8 @@ export const initialFishListings: FishListing[] = [
     weight: 45,
     price: 750,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[12].imageUrl,
-    imageHint: PlaceHolderImages[12].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1673912401852-7d97385c293b?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'red snapper',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 2)).toISOString(),
   },
   {
@@ -141,8 +141,8 @@ export const initialFishListings: FishListing[] = [
     weight: 55,
     price: 850,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[13].imageUrl,
-    imageHint: PlaceHolderImages[13].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1537319064867-3163638edd4b?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'grouper fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 1)).toISOString(),
   },
   {
@@ -152,8 +152,8 @@ export const initialFishListings: FishListing[] = [
     weight: 65,
     price: 900,
     freshness: '3+ Days',
-    imageUrl: PlaceHolderImages[14].imageUrl,
-    imageHint: PlaceHolderImages[14].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1757877255322-b9006e2296b3?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'cod fillets',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 5)).toISOString(),
   },
   {
@@ -163,8 +163,8 @@ export const initialFishListings: FishListing[] = [
     weight: 85,
     price: 300,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[15].imageUrl,
-    imageHint: PlaceHolderImages[15].imageHint,
+    imageUrl: 'https://plus.unsplash.com/premium_photo-1695299693952-4113f5682414?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'tilapia fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 1)).toISOString(),
   },
   {
@@ -174,8 +174,8 @@ export const initialFishListings: FishListing[] = [
     weight: 100,
     price: 420,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[16].imageUrl,
-    imageHint: PlaceHolderImages[16].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1690375097427-78224325d7da?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'mackerel fish',
     dateListed: new Date().toISOString(),
   },
   {
@@ -185,8 +185,8 @@ export const initialFishListings: FishListing[] = [
     weight: 150,
     price: 260,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[17].imageUrl,
-    imageHint: PlaceHolderImages[17].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1577710943883-98eca3dd1b4e?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'sardine fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 2)).toISOString(),
   },
   {
@@ -196,8 +196,8 @@ export const initialFishListings: FishListing[] = [
     weight: 20,
     price: 1250,
     freshness: '3+ Days',
-    imageUrl: PlaceHolderImages[18].imageUrl,
-    imageHint: PlaceHolderImages[18].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1594767169572-04fe914b61de?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'salmon fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 3)).toISOString(),
   },
   {
@@ -207,8 +207,8 @@ export const initialFishListings: FishListing[] = [
     weight: 40,
     price: 820,
     freshness: '1-2 Days',
-    imageUrl: PlaceHolderImages[19].imageUrl,
-    imageHint: PlaceHolderImages[19].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1516741539888-96b4c96adf0c?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'tuna fish',
     dateListed: new Date(new Date().setDate(new Date().getDate() - 1)).toISOString(),
   },
   {
@@ -218,8 +218,40 @@ export const initialFishListings: FishListing[] = [
     weight: 30,
     price: 980,
     freshness: 'Just Caught',
-    imageUrl: PlaceHolderImages[4].imageUrl,
-    imageHint: PlaceHolderImages[4].imageHint,
+    imageUrl: 'https://images.unsplash.com/photo-1760560749248-308061f48097?q=80&w=600&auto=format&fit=crop',
+    imageHint: 'pomfret fish',
     dateListed: new Date().toISOString(),
   },
+];
+
+const createPurchase = (listing: FishListing, quantity: number, buyerId: string, purchaseDate: string): Purchase => {
+  const totalPrice = listing.price * quantity;
+  const commission = totalPrice * 0.025;
+  const tax = totalPrice * 0.05;
+  const finalBill = totalPrice + commission + tax;
+
+  return {
+    id: `purchase-${Math.random().toString(36).substr(2, 9)}`,
+    listing,
+    buyerId,
+    quantity,
+    purchaseDate,
+    totalPrice,
+    commission,
+    tax,
+    finalBill,
+  };
+};
+
+export const initialPurchases: Purchase[] = [
+  createPurchase(initialFishListings[0], 10, 'buyer2', new Date(new Date().setDate(new Date().getDate() - 1)).toISOString()),
+  createPurchase(initialFishListings[2], 20, 'buyer3', new Date().toISOString()),
+  createPurchase(initialFishListings[4], 5, 'buyer1', new Date(new Date().setDate(new Date().getDate() - 3)).toISOString()),
+  createPurchase(initialFishListings[6], 15, 'buyer4', new Date(new Date().setDate(new Date().getDate() - 2)).toISOString()),
+  createPurchase(initialFishListings[8], 8, 'buyer2', new Date(new Date().setDate(new Date().getDate() - 1)).toISOString()),
+  createPurchase(initialFishListings[10], 50, 'buyer5', new Date().toISOString()),
+  createPurchase(initialFishListings[12], 12, 'buyer1', new Date(new Date().setDate(new Date().getDate() - 1)).toISOString()),
+  createPurchase(initialFishListings[14], 25, 'buyer3', new Date(new Date().setDate(new Date().getDate() - 5)).toISOString()),
+  createPurchase(initialFishListings[16], 30, 'buyer4', new Date().toISOString()),
+  createPurchase(initialFishListings[18], 4, 'buyer5', new Date(new Date().setDate(new Date().getDate() - 3)).toISOString()),
 ];
