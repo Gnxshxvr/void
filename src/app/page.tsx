@@ -19,21 +19,28 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-primary text-primary-foreground p-4 relative">
+    <main 
+        className="flex min-h-screen w-full flex-col items-center justify-center bg-primary text-primary-foreground p-4 relative"
+        style={{
+            backgroundImage: `url(https://i.imgur.com/8aR2a1d.jpeg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }}
+    >
       <div className="absolute top-4 right-4">
         <LanguageSwitcher />
       </div>
-      <Card className="w-full max-w-md shadow-2xl">
+      <Card className="w-full max-w-md shadow-2xl bg-card/90 backdrop-blur-sm">
         <CardHeader className="text-center">
           <div className="flex justify-center items-center mb-4">
               <Anchor className="h-12 w-12 text-accent" />
           </div>
           <CardTitle className="font-headline text-4xl text-primary">{t('appTitle')}</CardTitle>
-          <CardDescription className="pt-2">{t('appSubtitle')}</CardDescription>
+          <CardDescription className="pt-2 text-card-foreground/80">{t('appSubtitle')}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">
-            <h3 className="text-center font-semibold">{t('loginPrompt')}</h3>
+            <h3 className="text-center font-semibold text-card-foreground">{t('loginPrompt')}</h3>
             <Button onClick={() => handleLogin('buyer')} className="w-full" variant="outline">
               <User className="mr-2 h-4 w-4" />
               {t('loginAsBuyer')}
