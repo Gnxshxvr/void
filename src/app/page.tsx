@@ -20,12 +20,14 @@ export default function LoginPage() {
 
   return (
     <main 
-        className="flex min-h-screen w-full flex-col items-center justify-center bg-primary text-primary-foreground p-4 relative"
+        className="flex min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat p-4 relative"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509515837298-2c67a3973175?q=80&w=2070&auto=format&fit=crop')"}}
     >
-      <div className="absolute top-4 right-4">
+      <div className="absolute inset-0 bg-primary/70" />
+      <div className="absolute top-4 right-4 z-10">
         <LanguageSwitcher />
       </div>
-      <Card className="w-full max-w-md shadow-2xl bg-card/90 backdrop-blur-sm">
+      <Card className="w-full max-w-md shadow-2xl bg-card/90 backdrop-blur-sm z-10">
         <CardHeader className="text-center">
           <div className="flex justify-center items-center mb-4">
               <Anchor className="h-12 w-12 text-accent" />
