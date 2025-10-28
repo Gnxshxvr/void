@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "fish-1",
+      "description": "A fresh tuna fish on a bed of ice.",
+      "imageUrl": "https://images.unsplash.com/photo-1516741539888-96b4c96adf0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0dW5hJTIwZmlzaHxlbnwwfHx8fDE3NjE2MjU0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tuna fish"
+    },
+    {
+      "id": "fish-2",
+      "description": "A salmon fish ready for sale.",
+      "imageUrl": "https://images.unsplash.com/photo-1510018572596-e40e2619b412?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzYWxtb24lMjBmaXNofGVufDB8fHx8MTc2MTU3MDU3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "salmon fish"
+    },
+    {
+      "id": "fish-3",
+      "description": "A pile of fresh sardines at a market.",
+      "imageUrl": "https://images.unsplash.com/photo-1651276950299-44714b8677f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2FyZGluZXMlMjBmaXNofGVufDB8fHx8MTc2MTU3MDU3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sardines fish"
+    },
+    {
+      "id": "fish-4",
+      "description": "A large mackerel on a white background.",
+      "imageUrl": "https://images.unsplash.com/photo-1554071407-1fb7259a9118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWNrZXJlbCUyMGZpc2h8ZW58MHx8fHwxNzYxNTUxNzUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mackerel fish"
+    },
+    {
+      "id": "fish-5",
+      "description": "Pomfret fish on display.",
+      "imageUrl": "https://images.unsplash.com/photo-1760560749248-308061f48097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb21mcmV0JTIwZmlzaHxlbnwwfHx8fDE3NjE2MjU0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pomfret fish"
+    },
+    {
+      "id": "fish-6",
+      "description": "Indian oil sardine.",
+      "imageUrl": "https://images.unsplash.com/photo-1683293747532-d57803b08440?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2FyZGluZSUyMGZpc2h8ZW58MHx8fHwxNzYxNjI1NDEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sardine fish"
+    }
+  ]
 }

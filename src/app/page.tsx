@@ -1,3 +1,54 @@
-export default function Home() {
-  return <></>;
+'use client';
+
+import * as React from 'react';
+import { useRouter } from 'next/navigation';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Fish, Shield, User, Anchor } from 'lucide-react';
+import { useAppContext } from '@/contexts/AppContext';
+import type { UserRole } from '@/lib/types';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+
+export default function LoginPage() {
+  const { login, t } = useAppContext();
+  const router = useRouter();
+
+  const handleLogin = (role: UserRole) => {
+    login(role);
+    router.push('/dashboard');
+  };
+
+  return (
+    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-gradient-to-br from-background to-blue-100 p-4 relative">
+      <div className="absolute top-4 right-4">
+        <LanguageSwitcher />
+      </div>
+      <Card className="w-full max-w-md shadow-2xl backdrop-blur-sm bg-white/80">
+        <CardHeader className="text-center">
+          <div className="flex justify-center items-center mb-4">
+              <Anchor className="h-12 w-12 text-primary" />
+          </div>
+          <CardTitle className="font-headline text-4xl text-primary">{t('appTitle')}</CardTitle>
+          <CardDescription className="pt-2">{t('appSubtitle')}</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="space-y-2">
+            <h3 className="text-center font-semibold">{t('loginPrompt')}</h3>
+            <Button onClick={() => handleLogin('buyer')} className="w-full" variant="outline">
+              <User className="mr-2 h-4 w-4" />
+              {t('loginAsBuyer')}
+            </Button>
+            <Button onClick={() => handleLogin('seller')} className="w-full" variant="outline">
+              <Fish className="mr-2 h-4 w-4" />
+              {t('loginAsSeller')}
+            </Button>
+            <Button onClick={() => handleLogin('authority')} className="w-full" variant="outline">
+              <Shield className="mr-2 h-4 w-4" />
+              {t('loginAsAuthority')}
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+    </main>
+  );
 }
