@@ -21,7 +21,7 @@ export default function LoginPage() {
   return (
     <main 
         className="flex min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat p-4 relative"
-        style={{ backgroundImage: "url('https://img.freepik.com/free-vector/underwater-background-with-fish-shoal_23-2147595393.jpg?w=740&t=st=1723460699~exp=1723461299~hmac=a40a875a5e783a30c511516f49962a74c2eb63a9cec53a1525c345f1b2b3a05a')"}}
+        style={{ backgroundImage: "url('https://img.freepik.com/free-vector/hand-drawn-fish-pattern-illustration_23-2149420371.jpg?w=740&t=st=1723465158~exp=1723465758~hmac=84a3297a7318351583e742c3d5964a754160a28f7311749826a7e025f16361a2')"}}
     >
       <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm" />
       <div className="absolute top-4 right-4 z-10">
