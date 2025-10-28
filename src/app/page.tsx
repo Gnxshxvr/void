@@ -19,14 +19,14 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-gradient-to-br from-background to-blue-100 p-4 relative">
+    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-primary text-primary-foreground p-4 relative">
       <div className="absolute top-4 right-4">
         <LanguageSwitcher />
       </div>
-      <Card className="w-full max-w-md shadow-2xl backdrop-blur-sm bg-white/80">
+      <Card className="w-full max-w-md shadow-2xl">
         <CardHeader className="text-center">
           <div className="flex justify-center items-center mb-4">
-              <Anchor className="h-12 w-12 text-primary" />
+              <Anchor className="h-12 w-12 text-accent" />
           </div>
           <CardTitle className="font-headline text-4xl text-primary">{t('appTitle')}</CardTitle>
           <CardDescription className="pt-2">{t('appSubtitle')}</CardDescription>
