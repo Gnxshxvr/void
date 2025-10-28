@@ -21,7 +21,7 @@ export default function LoginPage() {
   return (
     <main 
         className="flex min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat p-4 relative"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1541542684-068342407684?q=80&w=2070&auto=format&fit=crop')"}}
+        style={{ backgroundImage: "url('https://img.freepik.com/free-vector/underwater-background-with-fish-shoal_23-2147595393.jpg?w=740&t=st=1723460699~exp=1723461299~hmac=a40a875a5e783a30c511516f49962a74c2eb63a9cec53a1525c345f1b2b3a05a')"}}
     >
       <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm" />
       <div className="absolute top-4 right-4 z-10">
