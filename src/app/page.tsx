@@ -22,7 +22,7 @@ export default function LoginPage() {
     <main 
         className="flex min-h-screen w-full flex-col items-center justify-center bg-primary text-primary-foreground p-4 relative"
         style={{
-            backgroundImage: `url(https://i.imgur.com/8aR2a1d.jpeg)`,
+            backgroundImage: `url(https://i.imgur.com/yVTaZ0S.jpeg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
         }}
